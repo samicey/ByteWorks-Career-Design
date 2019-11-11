@@ -3,8 +3,7 @@ Default stylings for the page.
 */
 html {
   color: #222;
-  font-size: 1em;
-  line-height: 1.4;
+  
 }
 
 hr {
@@ -24,22 +23,83 @@ hr {
   visibility: hidden;
 }
 /*
- Header styles
+ Main styles
 */
 header{
+
     background-color: #2196f3;
+    margin-top: -20px;
+    margin-left: -7px;
+    height: 70px; 
+    padding: 0 16px;
     width: 100%;
+    white-space: nowrap;
+    box-shadow: 0 3px 3px -2px rgba(0,0,0,.2), 0 3px 4px 0 rgba(0,0,0,.14), 0 1px 8px 0 rgba(0,0,0,.12);
+}
+
+#pageTitle{
+    font: 500 20px/32px Roboto,"Helvetica Neue",sans-serif;
+    color: #fff;
+    display: inline-block;
     
-    
+}
+
+#titleBar img{
+    margin-top: 20px;
+    float: left;
+    width: 3%;
+    margin-left: 70px;
+    margin-right: 20px;
+}
+
+#contact{
+    color:#fff;
+    float: right;
+    margin-top: 30px;
+    margin-right: 60px;
 }
 
 #profileColumn{
     float: left;
-    width:30%;
+    width:28%;
     overflow-y: scroll;
         
 }
+#details{
+    margin-top: -35px;
+}
+#profilePic{
+    border-radius: 50%;
+    width: 80px;
+  height: 80px;
+  padding-top: 8px;
+  text-align: center;
+  position: relative;
+  left: 40%;
+  border: 4px solid #fff;
+  bottom: -40px;
+  transition: 0.3s;
+}
+#profileCon{
+    background-color: #2196f3;
+    color: #fff;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
 
+#candidateName{
+    font: 600 20px/32px Roboto,"Helvetica Neue",sans-serif;
+    margin-bottom: -15px; 
+}
+#candidateTitle{
+    margin-bottom: 0px;
+}
+#candidateEmail{
+    margin-top: 0px;
+    
+}
 /* Media Queries */
 
 @media only screen and (min-width: 35em) {
