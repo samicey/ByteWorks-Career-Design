@@ -16,7 +16,10 @@ $(document).ready(function(){
     let myWorkLink = $('#myWorkLink');
     let mySkillsLink = $('#mySkillsLink');
     let myCertLink = $('#myCertLink');
-    let myUpload = $('#uploadDocs')
+    let myUpload = $('#uploadDocs');
+    let jobOpening = $('#openings1');
+    let Applications = $('#openings2');
+    let jobHome = $('#jobHome');
     // Hide other sections of the page  
     
     myEducation.hide()
@@ -36,8 +39,103 @@ myBioLink.on('click',()=>{
     optionBars.hide()
     Jobs.hide();
 })
-
     
+myEduLink.on('click',()=>{
+    myBio.hide()
+    uploadDoc.hide()
+    myApplications.hide() 
+    myEducation.fadeIn()
+    myWork.hide()
+    mySkills.hide()
+    myCert.hide()
+    optionBars.hide()
+    Jobs.hide();
+})
+
+myWorkLink.on('click',()=>{
+    myBio.hide()
+    uploadDoc.hide()
+    myApplications.hide() 
+    myEducation.hide()
+    myWork.fadeIn()
+    mySkills.hide()
+    myCert.hide()
+    optionBars.hide()
+    Jobs.hide();
+})
+
+myCertLink.on('click',()=>{
+    myBio.hide()
+    uploadDoc.hide()
+    myApplications.hide() 
+    myEducation.hide()
+    myWork.hide()
+    mySkills.hide()
+    myCert.fadeIn()
+    optionBars.hide()
+    Jobs.hide();
+})
+    
+mySkillsLink.on('click',()=>{
+    myBio.hide()
+    uploadDoc.hide()
+    myApplications.hide() 
+    myEducation.hide()
+    myWork.hide()
+    mySkills.fadeIn()
+    myCert.hide()
+    optionBars.hide()
+    Jobs.hide();
+})
+    
+myUpload.on('click',()=>{
+    myBio.hide()
+    uploadDoc.fadeIn()
+    myApplications.hide() 
+    myEducation.hide()
+    myWork.hide()
+    mySkills.hide()
+    myCert.hide()
+    optionBars.hide()
+    Jobs.hide();
+})
+    
+jobOpening.on('click',()=>{
+    myBio.hide()
+    uploadDoc.fadeIn()
+    myApplications.hide() 
+    myEducation.hide()
+    myWork.hide()
+    mySkills.hide()
+    myCert.hide()
+    optionBars.fadeIn()
+    Jobs.fadeIn();
+})
+    
+jobHome.on('click',()=>{
+    myBio.hide()
+    uploadDoc.hide()
+    myApplications.hide() 
+    myEducation.hide()
+    myWork.hide()
+    mySkills.hide()
+    myCert.hide()
+    optionBars.fadeIn()
+    Jobs.fadeIn();
+})
+    
+Applications.on('click',()=>{
+    myBio.hide()
+    uploadDoc.hide()
+    myApplications.fadeIn() 
+    myEducation.hide()
+    myWork.hide()
+    mySkills.hide()
+    myCert.hide()
+    optionBars.fadeIn()
+    Jobs.hide();
+})
+
 })
 /*
 profileColumn
